@@ -1,3 +1,8 @@
+//-----------------------------------------------------------------------
+// <copyright file="Solution.cs" company="MyCompany">
+//     Copyright (c) MyCompany. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 package careercup.datastructures.trees.aug292014;
 
 import java.util.ArrayList;
@@ -8,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-/*
+/* http://www.careercup.com/question?id=5752678512590848
 Given a binary tree,Write a function to return all of the nodes from a given node and a given distance. The function has three parameters root, the given node and the given distance. For example 
 		5 
 		/\ 
