@@ -22,6 +22,16 @@ import java.util.Queue;
  6 10 
  \ 
  12 
+  Calling the function F(root,7,1) will the return all the nodes from node 7 with the distance 1 which is 5 
+ another example is F(root.7,2) will the return nodes 4
+ 
+  5 
+ /\ 
+ 4 7 
+   /\ 
+   6 10 
+    \ 
+    12 
  Calling the function F(root,7,1) will the return all the nodes from node 7 with the distance 1 which is 6,10,5 
  another example is F(root.7,2) will the return nodes 12,4
  */
@@ -36,6 +46,14 @@ public class Solution {
 
 		// 1
 		test = test(top, test, 7, 2, Arrays.asList(4));
+		
+		top = createTree2();
+
+		// 0
+		test = test(top, test, 7, 1, Arrays.asList(6,10,5));
+
+		// 1
+		test = test(top, test, 7, 2, Arrays.asList(12,4));
 	}
 
 	private static int test(TreeNode top, int test, int start, int dist,
@@ -89,6 +107,24 @@ public class Solution {
 		node = new TreeNode(7);
 		root.right = node;
 		root = root.left;
+		node = new TreeNode(6);
+		root.left = node;
+		node = new TreeNode(10);
+		root.right = node;
+		root = root.left;
+		node = new TreeNode(12);
+		root.right = node;
+		return top;
+	}
+	
+	private static TreeNode createTree2() {
+		TreeNode root = new TreeNode(5);
+		TreeNode top = root;
+		TreeNode node = new TreeNode(4);
+		root.left = node;
+		node = new TreeNode(7);
+		root.right = node;
+		root = root.right;
 		node = new TreeNode(6);
 		root.left = node;
 		node = new TreeNode(10);
