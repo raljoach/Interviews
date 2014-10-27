@@ -3,6 +3,11 @@
 //     Copyright (c) MyCompany. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
+// <copyright file="Solution.cs" company="MyCompany">
+//     Copyright (c) MyCompany. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 package careercup.datastructures.trees.yr140829;
 
 import java.util.ArrayList;
