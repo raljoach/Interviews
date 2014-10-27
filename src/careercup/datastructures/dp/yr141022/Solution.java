@@ -63,7 +63,7 @@ public class Solution {
 			int n = locs.size();
 			if (n > 1) {
 				for (int i = 0; i < n; i++) {
-				    int s = locs.get(i);
+					int s = locs.get(i);
 					for (int j = i + 1; j < n; j++) {
 						int t = locs.get(j);
 						String lcs = longCommSubseq(input, s, t);
@@ -101,8 +101,8 @@ public class Solution {
 						seq += c1;
 						prevMatchIndex = j;
 					}
-					
-                    L[i2][j2] = 1 + getVal(L,i2-1,j2-1);					
+
+					L[i2][j2] = 1 + getVal(L,i2-1,j2-1);					
 				}
 				else {
 					L[i2][j2] = Math.max(getVal(L,i2-1,j2), getVal(L,i2,j2-1));
@@ -111,7 +111,7 @@ public class Solution {
 		}
 		return seq;
 	}
-	
+
 	private static int getVal(int[][] L, int i, int j){
 		if(i<0 || j<0){
 			return 0;
