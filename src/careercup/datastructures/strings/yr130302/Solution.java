@@ -5,6 +5,7 @@
 //-----------------------------------------------------------------------
 package careercup.datastructures.strings.yr130302;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /* http://www.careercup.com/question?id=15555796
@@ -48,9 +49,34 @@ public class Solution {
         return false;
     }
 
-    private static List<String> getPerms(String str2) {
-        // TODO Auto-generated method stub
-        return null;
+    private static List<String> getPerms(String str) {
+        return getPerms(0,str);
+    }
+
+    private static List<String> getPerms(int index, String str) {
+        List<String> list = new ArrayList<String>();
+        if(index==str.length()){            
+            list.add("");            
+        }
+        else{
+            char item = str.charAt(index);
+            List<String> subPerms = getPerms(index+1,str);
+            for(String s:subPerms){
+                for(int i=0; i<=s.length(); i++){
+                    String first = "";
+                    if(i>0){
+                        first = s.substring(0, i);
+                    }
+                    String second = "";
+                    if(i<s.length()){
+                        second = s.substring(i);
+                    }
+                    String newPerm = first + item + second;
+                    list.add(newPerm);
+                }
+            }
+        }
+        return list;
     }
 
 }

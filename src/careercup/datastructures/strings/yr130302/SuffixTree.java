@@ -17,10 +17,13 @@ public class SuffixTree {
     }
     
     private void insert(String str){
-        int endIndex = str.length();
-        for(int start=str.length()-1; start>=0; start--){
-            String subStr = str.substring(start, endIndex);
-            root.insert(subStr);
+        //int endIndex = str.length();
+        //for(int start=str.length()-1; start>=0; start--){
+        //    String subStr = str.substring(start, endIndex);
+        int strLen = str.length();
+        for (int end = 1; end <= strLen; end++) {
+            String prefix = str.substring(0, end);
+            root.insert(prefix);
         }
     }
 }

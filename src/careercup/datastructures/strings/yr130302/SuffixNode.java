@@ -49,7 +49,7 @@ public class SuffixNode {
         if(str==null || str.equals("")){
             return false;
         }
-        if(this.value.equals(str)){
+        if(this.value!=null && this.value.equals(str)){
             return true;
         }
         else {
