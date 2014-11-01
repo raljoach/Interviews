@@ -124,6 +124,7 @@ public class Solution {
             }
             if(!found){
                 System.out.println("Error: Actual does not contain pair " + printPair(e));
+                return false;
             }
         }
         return true;
