@@ -1,8 +1,5 @@
-package basics.parallelism.events;
+package basics.algorithms.sorting.shellsort;
 
-/* AutoResetEvent, ManualResetEvent
- * 
- */
 public class Solution {
 
     public static void main(String[] args) {

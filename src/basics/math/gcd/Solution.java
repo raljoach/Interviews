@@ -1,8 +1,5 @@
-package basics.parallelism.events;
+package basics.math.gcd;
 
-/* AutoResetEvent, ManualResetEvent
- * 
- */
 public class Solution {
 
     public static void main(String[] args) {
