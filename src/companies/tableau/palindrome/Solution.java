@@ -14,7 +14,7 @@ public class Solution {
 	}
 
 	private static int test(int test, int min, int max, int expected) {
-		System.out.println("Test" + (++test));
+		System.out.println("Test" + (test++));
 		int actual = solve(min, max);
 		System.out.println("range: " + min + "-" + max);
 

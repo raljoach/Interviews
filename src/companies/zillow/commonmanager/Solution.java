@@ -30,7 +30,7 @@ public class Solution {
     }
 
     private static int test(int test, Employee e1, Employee e2, Employee expected) {        
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         Employee actual = solve(e1,e2);
         System.out.println("input: " + e1.name + " " + e2.name);
 

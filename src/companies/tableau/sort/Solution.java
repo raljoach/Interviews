@@ -18,7 +18,7 @@ public class Solution {
     }
 
     private static int test(int test, Object[] input, Object[] expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         System.out.println("input: " + print(input));
         Object[] actual = solve(input);
         

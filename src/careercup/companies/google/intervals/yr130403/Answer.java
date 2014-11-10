@@ -13,7 +13,7 @@ public class Answer {
 
     private static int test(int test, int[] input1, int[] input2, int[] input3,
             int[] expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         int[] actual = solve(input1, input2, input3);
         System.out.println("list: " + print(input1));
         System.out.println("list: " + print(input2));

@@ -36,7 +36,7 @@ public class Solution {
     }
 
     private static int test(int test, String input, String expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         String actual = solve(input);
         System.out.println("input: " + input);
 

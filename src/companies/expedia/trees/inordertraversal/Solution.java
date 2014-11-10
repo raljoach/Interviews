@@ -31,7 +31,7 @@ public class Solution {
     }
 
     private static int test(int test, TreeNode root, List<TreeNode> expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         List<TreeNode> actual = solve(root);
         
         System.out.println("Expected:" + print(expected));

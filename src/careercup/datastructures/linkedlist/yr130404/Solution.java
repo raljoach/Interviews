@@ -18,7 +18,7 @@ public class Solution {
 
     private static int test(int test, int[] input, int k, int expected)
             throws Exception {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         int actual = solve(input, k);
         System.out.println("list: ");
         for (int val : input) {

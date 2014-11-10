@@ -57,7 +57,7 @@ public class Solution {
     }
 
     private static int test(int test, List<Person> input, List<Pair> expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         System.out.println("input: " + printPersons(input));
         List<Pair> actual = solve(input);        
 

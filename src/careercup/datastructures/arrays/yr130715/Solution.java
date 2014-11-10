@@ -27,7 +27,7 @@ public class Solution {
     }
 
     private static int test(int test, List<Integer> input, List<Integer> expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         List<Integer> actual = solve(input);
         System.out.println("input: ");
         printList(input);

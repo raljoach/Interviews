@@ -31,7 +31,7 @@ public class Solution {
     }
 
     private static int test(int test, int[] set, List<List<Integer>> expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         System.out.println("input: " + print(set));
         List<List<Integer>> actual = solve(set);        
 

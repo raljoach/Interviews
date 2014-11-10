@@ -20,7 +20,7 @@ public class Solution {
     }
 
     private static int test(int test, String str1, String str2, boolean expected) {
-        System.out.println("Test" + (++test));
+        System.out.println("Test" + (test++));
         boolean actual = solve(str1, str2);
         System.out.println(str1 + " " + str2);
 
